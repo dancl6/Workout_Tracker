@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+* {
+	font-family: "Roboto Slab";
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.title {
+  color: white !important;
+  font-size: 5vw;
+  text-align: left;
+  display: flex;
+  margin: 15px;
+}
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+a.d-flex.title:hover {
+  color: white !important;
+}
+
+.page-header {
+  display: flex !important;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: rgb(214,31,192);
+  background: linear-gradient(90deg, rgba(214,31,192,1) 2%, rgba(133,35,213,1) 33%, rgba(36,73,218,1) 74%, rgba(12,159,214,1) 100%);
+  background-size: 4000px 4000px;
+  background-attachment: scroll !important;
+}
+
+nav {
+  display: flex;
+}
+
+header nav ul {
+  align-items: right;
+  list-style: none;
+  margin: 15px;
+  color: white;;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit !important;
+  border: none;
+}
+
+.login-size {
+  color: white;
+}
+
+.card {
+  height: 100%;
+}
+
+.single-exercise {
+  align-self: start;
+}  
+
+.input-label {
+  min-width: 20%
+}
+
+.input-area {
+  min-width: 35%;
+  margin-top: 10px;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.workout-text {
+  size: 30px;
+}
+
+.workout-modal {
+  z-index: 9999 !important;
+}
+
+/* FullCalendar event title wasn't wrapping, used this to fix https://stackoverflow.com/questions/13597136/fullcalendar-event-title-only-allowed-one-line */
+.fc-daygrid-block-event, 
+.fc-event-title {
+    white-space: normal !important;
+}
+
+.form-input {
+  width: 100% !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
